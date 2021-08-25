@@ -1,0 +1,52 @@
+modern-mode: api-support # or none
+extrawall-login-private-mode: false
+extrawall-login-private-api: none # ultraauth / none / authme
+extra-wall:
+  event-classes-to-be-activated:
+    - "asci$charsets"
+    - "nulled$address"
+    - "anti$spam"
+    - "closed$address$channels"
+    - "anti$op"
+    - "anti$uuid$spoof"
+    - "anti$nulled$crash"
+    - "mc$brand"
+  operator-password: 12345
+  check*time: 5 # TYPE: seconds
+  operators:
+    - "Mixeration"
+  refresh-data-time: 1
+  login:
+    login-command:
+      staffs: stafflogin
+      operators: oplogin
+  operator-accounts:
+    Mixeration:
+      password: 12345
+      can-use-op-command: sure
+      ip-address: 127.0.0.1
+  staff-accounts:
+    Mixeration:
+      password: 12345
+  uuid-spoof:
+    enable: true
+  anti-spam:
+    cooldown: 2
+  mc-brand:
+    enable: true
+  ping-control-event:
+    100:
+      ms: 100
+      message: "&c&lWARNING ! &7Your ping is 100 and in progress"
+  settings:
+    mc-brand:
+      channel-mode: "whitelist"
+      whitelist:
+        channels:
+          - vanilla
+      blacklist:
+        channels:
+          - Lunarclient
+    null-address:
+      closed-address-channels:
+        - "123.123.123.123"

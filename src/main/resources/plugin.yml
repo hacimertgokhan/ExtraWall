@@ -1,0 +1,27 @@
+name: ExtraWall
+version: '${project.version}'
+main: net.mixeration.extrawall.ExtraWall
+prefix: ExtraWall
+load: POSTWORLD
+authors: [ Mixeration ]
+depend:
+  - DeveloperAPI
+commands:
+  Extrawall:
+    permission: extrawall.staff
+    aliases:
+      - eWall
+  eWallOperator:
+    description: Extra wall operator commands
+  eWallSpigot:
+    description: Extra wall spigot file edit commands
+
+permissions:
+  extrawall.staff:
+    description: Extra wall staff permissions.
+  extrawall.staff.help:
+    description: Extra wall help permissions.
+  extrawall.eaccount.private:
+    description: Extra wall staff permissions.
+  extrawall.spigot.help:
+    description: Extra wall spigot file edit permissions.

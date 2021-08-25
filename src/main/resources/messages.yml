@@ -1,0 +1,87 @@
+messages:
+  spigot-file:
+    changed-settings: "&b&lCHANGED SETTINGS ! &7Settings %settings_name% changed to %changed_to%"
+    wrong-usage-type: "&b&lCHANGED SETTINGS ! &7Usage: &e%command%"
+  error:
+    no-permission: "&c&lWARNING ! &7You dont have a enough permission to do this operation!"
+    cant-getting-ram-information: "&c&lWARNING ! &7I cant getting ram information, please try again."
+    player-not-online: "&c&lWARNING ! &7Player not online!"
+    wrong-password: "&c&lHEY ! &7Wrong password!"
+  console:
+    only-in-game: "Command only for players (STAFF)"
+  user-command:
+    spigot-help-messages:
+      - ""
+      - "&cThis is too long,"
+      - "&cI am too lazy to do."
+      - ""
+      - "&c&lULTRA MEGA BRUH"
+      - ""
+    operator-help-messages:
+      - ""
+      - "&e&lExtra Wall &7| &bOperator"
+      - "   &f- &/eWallOperator add <password> <user>"
+      - "   &f- &/eWallOperator remove <password> <user>"
+      - ""
+    help-message: # if modern mode is none
+      - ""
+      - "&e&lExtra Wall &7| by Mixeration"
+      - "   &f- &7/Extrawall notify"
+      - "   &f- &7/Extrawall reload"
+      - "   &f- &7/Extrawall server"
+      - ""
+  notify-options:
+    enable: "&a&lINFORMATION &7Notify enabled."
+    disable: "&a&lINFORMATION &7Notify disabled."
+  notifications:
+    operators:
+      now-is-operator: "&a&lWARNING &7User %suspect% now is operator ! &fLocale ? &b(%suspect_locale%)&7."
+      now-is-not-operator: "&a&lWARNING &7User %suspect% now is not operator ! &fLocale ? &b(%suspect_locale%)&7."
+    server-in-danger: "&c&lWARNING ! &7Suspect &e%suspect% &7not in operator list but operator ! &fLocale ? &b(%suspect_locale%)&7."
+    operator-accounts:
+      wrong-address: "&c&lWARNING ! &7Suspect &e%suspect% &7Joining wrong address &fAddress ? &b(%address%)&7, &fLocale ? &b(%suspect_locale%)&7."
+    entered-wrong-password: "&c&lWARNING ! &7Suspect &e%suspect% &7Entered wrong password, &fAddress ? &b(%suspect_address%)&7, &fLocale ? &b(%suspect_locale%)&7."
+    nulled-events: "&c&lWARNING ! &7Suspect &e%suspect% &7Trying to crash server, &fLocale ? &b(%suspect_locale%)&7."
+    uuid-spoof: "&c&lWARNING ! &7Suspect &e%suspect% &7Trying to spoof other player uuid, &fAddress ? &b(%suspect_address%)&7, &fLocale ? &b(%suspect_locale%)&7."
+    anti-spam: "&c&lWARNING ! &7Suspect &e%suspect% &7Doing spam, &fAddress ? &b(%suspect_address%)&7, &fLocale ? &b(%suspect_locale%)&7."
+    asci-charsets: "&c&lWARNING ! &7Suspect &e%suspect% &7trying to use other keyboard characters (TRYING FOR CRASH), &fAddress ? &b(%suspect_address%)&7, &fLocale ? &b(%suspect_locale%)&7."
+    disallowed-client: "&c&lWARNING ! &7Suspect &e%suspect% &7join with &b%suspect_client% &7client, &ckicked by Extrawall"
+    closed-address-channel: "&c&lWARNING ! &7Suspect &e%suspect% &7joined from closed address channel, &fAddress ? &b(%suspect_address%)&7, &fLocale ? &b(%suspect_locale%)&7."
+    null-address: "&c&lWARNING ! &7Suspect &e%suspect% &7join with null address, &fisNonAddress ? &b(%isNonLocalAddress%)&7, &fAddress ? &b(%suspect_address%)&7, &fLocale ? &b(%suspect_locale%)&7."
+  extra-wall:
+    operator:
+      op-gived: "&a&lHEY ! &7Player &f%player% &7now is operator !"
+      op-taked: "&c&lHEY ! &7Player &f%player% &7now is not operator !"
+    anti-op:
+      event-cancelled: "&c&lERROR ! &7Event cancelled."
+      usage: "&e&lUSAGE ! &7/eWallOperator add <password> <user>"
+    operator-accounts:
+      kick-suspect: "&c&lERROR ! &7You joined with wrong address ! &7(&c%address%&7)"
+    login:
+      kick-suspect: "&c&lERROR ! &7Your time is up ! &7(&cExtraWall&7)"
+    nulled-events:
+      cancelMessage: "&c&lERROR ! &7You cant do this because this event has been cancelled!"
+    staff-accounts:
+      first-of-all: "&c&lLOGIN &7You need to login %api_plugin% !"
+      wrong-password: "&c&lLOGIN &7Wrong password !"
+      already-logged-in: "&c&lLOGIN &7You already logged in !"
+      usage: "&2&lLOGIN &7/oplogin or stafflogin <Pass>"
+      please-login: "&2&lLOGIN &7Please enter your password."
+      login-password: "&2&lLOGIN &7Please enter your password, &f/oplogin or stafflogin <Pass>"
+      join-succesfuly: "&a&lLOGIN &7Join successful !"
+      address-control-cant-passed: "&c&lERROR ! &7You joined with wrong address ! &7(&c%address%&7)"
+    uuid-spoof:
+      kick-suspect: "&c&lERROR ! &7Uuid spoof detected"
+    anti-spam:
+      please-wait: "&c&lHEY ! &7Please wait, %delay% seconds"
+    asci-charsets:
+      cancel-event: "&c&lHEY ! &7Books are limited to ASCII characters"
+    disallowed-client:
+      kick-suspect: "&c&lERROR ! &7Your joined disallowed client, Client Name &7( &b%suspect_client% &7)"
+    reload:
+      unsuccessful: "&a&lINFORMATION &7Plugin reload &cfailed&7, please check extra_wall and messages file then try again."
+      successful: "&a&lINFORMATION &7Plugin reload &2successful&7."
+    closed-address-channels:
+      kick-suspect: "&c&lERROR ! &7Your joined from &cclosed address channel&7, please join with &fplay.Extrawall.net"
+    null-address:
+      kick-suspect: "&c&lERROR ! &7Your address is null-address, information: Locale: &c%suspect_locale% %nextline% &7Null Address: &e%suspect_address%"
